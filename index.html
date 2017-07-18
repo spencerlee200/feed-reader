@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feed Reader</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="feed" class="selected"><i class="fa fa-reddit-alien" aria-hidden="true"></i><span id="title"></span></li>
+          <li id="favorites"><i class="fa fa-heart" aria-hidden="true"></i> Favorites (<span id="counter">0</span>)</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div id="Change">
+        <form action="index.html" method="post">
+          <label for="subreddit">Change Subreddit</label>
+          <input type="text" name="subreddit" id="sub-input" placeholder="/r/subredditname">
+          <button type="button" id="newSub">Let's Go</button>
+        </form>
+      </div>
+      <div id="posts">
+
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

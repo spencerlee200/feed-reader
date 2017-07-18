@@ -1,0 +1,150 @@
+/*////////////////////////////////////
+          General Selectors
+////////////////////////////////////*/
+body {
+  margin: 0;
+  font: 16px helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #57a2e4;
+}
+
+/*////////////////////////////////////
+    Header and primary navigation
+////////////////////////////////////*/
+header {
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: white;
+  color: #57a2e4;
+}
+
+header:after {
+  clear: both;
+  content:"";
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav li {
+  width: auto;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
+
+nav li a {
+  padding: 19px;
+}
+
+header::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.selected, .selected a {
+  background: #57a2e4;
+  color: white;
+}
+
+/*////////////////////////////////////
+      Subreddit button and form
+////////////////////////////////////*/
+#Change {
+  width: 100%;
+}
+
+#Change p {
+  text-align: left;
+}
+
+/*////////////////////////////////////
+                Posts
+////////////////////////////////////*/
+.container {
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.post {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(110,110,110,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(110,110,110,1);
+  box-shadow: 0px 0px 10px 0px rgba(110,110,110,1);
+  margin: 30px auto;
+  width: 500px;
+  position: relative;
+}
+
+.post img {
+  max-width: 100%;
+  height: 350px;
+}
+
+.img-container {
+  width: 100%;
+  height: 350px;
+  background: black;
+}
+
+.img-info {
+  padding: 15px 0;
+  font: 12px helvetica, sans-serif;
+  color: #999;
+  border-top: 1px solid #eee;
+}
+
+.post h2 {
+  margin-top: 0;
+  font: 18px arvo;
+  line-height: 24px;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .post {
+    width: 80%;
+  }
+}
+
+.like {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  float: left;
+  color: white;
+  font-size: 1.5em;
+}
+
+.liked {
+  color: red;
+}
+
+.trash {
+  color: white;
+}
+
+#banner {
+  margin: 0 auto;
+  width: 80%;
+  padding: 15px;
+  background: #FCFF6C;
+  opacity: .6;
+  margin-top: 15px;
+}
+
+.hidden {
+  display:none;
+}
